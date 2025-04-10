@@ -16,6 +16,7 @@ export const Felispo = (): React.JSX.Element => {
                     className={styles.cavalinhoImage} // Optional: Add a class for styling
                 />
             </div> */}
+            teste
             <div className={styles.imageContainer}>
                 <Image
                     src="/static/images/felispo.png"
