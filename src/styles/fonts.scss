@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Coolvetica Hv Comp';
+    src: url('/static/fonts/coolvetica/Coolvetica Hv Comp.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg Cond';
+    src: url('/static/fonts/coolvetica/Coolvetica Rg Cond.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg Cram';
+    src: url('/static/fonts/coolvetica/Coolvetica Rg Cram.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg It';
+    src: url('/static/fonts/coolvetica/Coolvetica Rg It.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Coolvetica Rg';
+    src: url('/static/fonts/coolvetica/Coolvetica Rg.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AGaramondPro-Bold';
+    src: url('/static/fonts/garamond/AGaramondPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AGaramondPro-BoldItalic';
+    src: url('/static/fonts/garamond/AGaramondPro-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AGaramondPro-Italic';
+    src: url('/static/fonts/garamond/AGaramondPro-Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AGaramondPro-Regular';
+    src: url('/static/fonts/garamond/AGaramondPro-Regular.otf') format('opentype');
+}
+
+:root {
+    --font-coolvetica-hv-comp: 'Coolvetica Hv Comp', sans-serif;
+    --font-coolvetica-rg-cond: 'Coolvetica Rg Cond', sans-serif;
+    --font-coolvetica-rg-cram: 'Coolvetica Rg Cram', sans-serif;
+    --font-coolvetica-rg-it: 'Coolvetica Rg It', sans-serif;
+    --font-coolvetica-rg: 'Coolvetica Rg', sans-serif;
+    --font-garamond-bold: 'AGaramondPro-Bold', serif;
+    --font-garamond-bold-italic: 'AGaramondPro-BoldItalic', serif;
+    --font-garamond-italic: 'AGaramondPro-Italic', serif;
+    --font-garamond-regular: 'AGaramondPro-Regular', serif;
+}
