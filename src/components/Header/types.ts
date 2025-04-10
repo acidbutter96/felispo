@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export interface HeaderProps {
-    hiddenMenu?: boolean;
-    children?: React.ReactNode;
-}
+// export interface HeaderProps {
+//     hiddenMenu?: boolean;
+//     children?: React.ReactNode;
+// }
