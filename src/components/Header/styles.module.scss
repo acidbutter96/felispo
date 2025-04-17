@@ -1,12 +1,17 @@
-$fontSize: 1.15rem;
+@use '@/styles/variables.scss' as variables;
 
 .headerContainer {
-    font-family: var(--font-coolvetica-rg);
-    font-size: $fontSize;
+    font-family: variables.$font-coolvetica-rg;
+    font-size: variables.$font-size;
 
     h1 {
-        font-family: var(--font-coolvetica-rg);
-        font-size: $fontSize;
+        font-family: variables.$font-coolvetica-rg;
+        font-size: variables.$font-size;
+        color: variables.$black
+    }
+
+    a {
+        color: variables.$black;
     }
 
 
@@ -26,7 +31,6 @@ $fontSize: 1.15rem;
 
             a {
                 text-decoration: none;
-                color: white;
                 font-size: 1.5rem;
                 font-weight: bold;
 
@@ -39,21 +43,17 @@ $fontSize: 1.15rem;
 }
 
 .navbarContainer {
-    position: fixed;
-    top: 0;
-    
+    height: variables.$header-height;
+    width:  calc(100% - 4rem);
+
     padding: inherit;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--blue-100);
 
-    height: var(--header-height);
-    width:  calc(100% - 4rem);
-
-    border-bottom: var(--border-weight) solid var(--grey-0);
+    border-bottom: variables.$border-weight solid variables.$grey-0;
 
     z-index: 10;
 
@@ -75,15 +75,15 @@ $fontSize: 1.15rem;
 
         list-style: none;
 
+
         li {
             a {
                 text-decoration: none;
-                color: var(--white);
 
                 transition: all .5s;
 
                 &:hover {
-                    color: var(--grey-0);
+                    color: variables.$grey-0;
                 }
             }
 

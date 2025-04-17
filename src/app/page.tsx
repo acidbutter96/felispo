@@ -1,13 +1,18 @@
 import styles from "./page.module.scss"
 import { Header } from "@/components/Header";
 import { Felispo } from "@/containers/home/Felispo";
+import { ActFacade } from "@/containers/home/ActFacade";
 
 export default function Home() {
   return (
     <>
-      <main className={styles.mainContainer}>
+      <main className={styles.container}>
         <Header/>
         <Felispo/>
+        <ActFacade/>
+        <footer>
+          footer
+        </footer>
       </main>
     </>
   );

@@ -1,3 +1,4 @@
+@use './variables' as variables;
 @use 'fonts';
 
 * {
@@ -5,57 +6,37 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: var(--font-roboto);
+    font-family: variables.$font-roboto;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-:root {
-    --white-8: #f8f8f8;
-    --grey-0: rgb(211, 209, 209);
-
-    --border-weight: .2rem;
-    --header-height: 6rem;
-}
-
-@media (max-width: 1080px){
-    html {
-        font-size: 93.75%; //15px --> 93,75%=15px/16px; 1rem = 16px, 
-    }
-}
-
-@media (max-width: 720px){
-    html {
-        font-size: 87.5%; //14px
-    }
-}
-
 body {
-    background-color: var(--blue-50);
-    color: var(--white);
+    background-color: variables.$white-8;
+    color: variables.$black;
 
     overflow: hidden;
 }
 
 body, input, textarea, button {
-    font: 500 1rem Roboto, sans-serif;
-    color: var(--white);
+    font: 500 1rem variables.$font-roboto;
+    color: variables.$black;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    font-family: Roboto, sans-serif;
-    color: var(--white);
+    font-family: variables.$font-roboto;
+    color: variables.$black;
 }
 
 h1 {
-    font-size: 2rem; //32px
+    font-size: 2rem; // 32px
 }
 
 h2 {
-    font-size: 1.5rem; //24px
+    font-size: 1.5rem; // 24px
 }
 
 button {

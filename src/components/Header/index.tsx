@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 
 export const Header = (): React.JSX.Element => {
     return (
-        <header className={styles.headerContainer}>
+        <div className={styles.headerContainer}>
             <nav className={styles.navbarContainer}>
                 <div className={styles.titleContainer}>
                     <h1>
@@ -28,6 +28,6 @@ export const Header = (): React.JSX.Element => {
                     </ul>
                 </div>
             </nav>
-        </header>
+        </div>
     )
 }

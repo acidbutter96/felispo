@@ -16,7 +16,7 @@ export const Felispo = (): React.JSX.Element => {
                     className={styles.image}
                 />
             </div>
-            <div className={styles.cavalinhoContainer}>
+            {/* <div className={styles.cavalinhoContainer}>
                 <Image
                     src="/static/images/cavalinho.gif" // Path to cavalinho.gif
                     alt="Cavalinho Animation"
@@ -24,7 +24,7 @@ export const Felispo = (): React.JSX.Element => {
                     height={300} // Adjust height as needed
                     className={styles.cavalinhoImage} // Optional: Add a class for styling
                 />
-            </div>
+            </div> */}
         </div>
     )
 }

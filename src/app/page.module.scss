@@ -1,11 +1,15 @@
+@use '@/styles/variables.scss' as variables;
+
 .main {
   background-color: var(--white-8);
 }
 
-.mainContainer {
+.container {
   position: fixed;
   left: 0;
 
   height: 100vh;
   width: 100vw;
+
+  overflow-y: scroll;
 }
