@@ -1,4 +1,4 @@
-$fontSize: 1.45rem;
+$fontSize: 1.15rem;
 
 .headerContainer {
     font-family: var(--font-coolvetica-rg);
@@ -41,16 +41,12 @@ $fontSize: 1.45rem;
 .navbarContainer {
     position: fixed;
     top: 0;
+    
+    padding: inherit;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @media screen and (max-width: 430px) {
-        justify-content: center;
-    }
-
-    padding: inherit;
 
     background-color: var(--blue-100);
 
@@ -60,6 +56,10 @@ $fontSize: 1.45rem;
     border-bottom: var(--border-weight) solid var(--grey-0);
 
     z-index: 10;
+
+    @media screen and (max-width: 430px) {
+        justify-content: center;
+    }
 }
 
 .titleContainer {
