@@ -1,9 +1,13 @@
 "use app";
-import React  from "react";
+import React from "react";
 import styles from "./styles.module.scss";
 
 export const Footer = (): React.JSX.Element => {
     const date = new Date();
+
+    const formattedTime = `${date.getHours()}:${String(date.getMinutes()).padStart(2, "0")}`;
+    const location = "São Paulo";
+    const temperature = "23ºC";
 
     return (
         <div className={styles.container}>
@@ -13,31 +17,23 @@ export const Footer = (): React.JSX.Element => {
                         Tem um projeto em mente?
                     </div>
                     <div className={styles.textContainer}>
-                        <div>
-                            Vamos Criar
-                        </div>
-                        <div className={styles.styledText}>
-                            coisas legais
-                        </div>
-                        <div>
-                            juntos!
-                        </div>
+                        <div>Vamos Criar</div>
+                        <div className={styles.styledText}>coisas legais</div>
+                        <div>juntos!</div>
                     </div>
                     <div className={styles.emailContainer}>
-                        <a href="mailto:hi@felispo.com">
-                            hi@felispo.com
-                        </a>
+                        <a href="mailto:hi@felispo.com">hi@felispo.com</a>
                     </div>
                     <div className={styles.infoContainer}>
                         <div className={styles.copyright}>
                             DevButter &copy; {date.getFullYear()}
                         </div>
                         <div className={styles.location}>
-                            {date.getHours()}:{date.getMinutes()} São Paulo 23ºC
+                            {formattedTime} {location} {temperature}
                         </div>
                     </div>
                 </div>
             </footer>
         </div>
-    )
-}
+    );
+};
