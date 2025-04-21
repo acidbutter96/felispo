@@ -1,4 +1,4 @@
-@use '@/styles/variables.scss' as variables;
+@use '@/styles/variables' as variables;
 
 .headerContainer {
     font-family: variables.$font-coolvetica-rg;
@@ -43,15 +43,10 @@
             align-items: center;
             gap: 2rem;
 
-
             a {
                 text-decoration: none;
                 font-size: 1.5rem;
                 font-weight: bold;
-
-                &:hover {
-                    color: red;
-                }
             }
         }
     }

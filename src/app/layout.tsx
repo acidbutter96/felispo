@@ -24,8 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/felispo.svg" sizes="any" />
       <body className={roboto.className}>
-          {children}
-        </body>
+        {children}
+      </body>
     </html>
   );
 }

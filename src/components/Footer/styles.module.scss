@@ -1,0 +1,137 @@
+@use '@/styles/variables' as variables;
+
+$text-spacement: 3rem;
+
+.container {
+    footer {
+        display: flex;
+
+        height: variables.$footer-height;
+        background-color: variables.$pink-100;
+    }
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0 5rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: variables.$font-coolvetica-rg;
+    font-size: variables.$font-size;
+
+    width: 100%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: variables.$font-size-10;
+
+    gap: 0.1rem;
+
+    div {
+        display: inline;
+        height: calc(variables.$font-size-10 * 1.2);
+
+        font-family: variables.$font-coolvetica-rg-cond;
+        font-size: variables.$font-size-15;
+
+        margin: 0;
+        padding: 0;
+
+        position: relative;
+
+        &:first-child {
+            text-align: end;
+
+            position: relative;
+            bottom: .75rem;
+
+        }
+
+        &:last-child {
+            text-align: start;
+
+            position: relative;
+
+            top: calc(-.75 * $text-spacement);
+        }
+    }
+
+    .styledText {
+        font-family: variables.$font-garamond-italic;
+        font-size: variables.$font-size-10;
+        color: variables.$black;
+        text-align: center;
+
+        padding: 0;
+    }
+}
+
+.emailContainer {
+    border: variables.$border-weight solid variables.$black;
+    border-radius: 10rem;
+
+    font-family: variables.$font-coolvetica-rg-cond;
+    font-size: calc(variables.$font-size-10 * 0.4);
+    letter-spacing: .1rem;
+
+    padding: .5rem 1rem;
+
+    transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
+
+    a {
+        all: unset;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &:hover {
+        color: variables.$pink-300;
+        border-color: variables.$pink-300;
+
+    }
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    div {
+        width: 50%;
+    }
+
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+}
