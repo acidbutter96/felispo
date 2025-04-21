@@ -1,8 +1,57 @@
 @use 'src/styles/variables' as variables;
 
+$text-size: calc(variables.$font-size-10 * 1.45);
+$line-height: calc(variables.$font-size-10 * 1.3);
+
 .aboutContainer {
     position: relative;
     display: flex;
 
     height: variables.$aboutSectionHeight;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 60%;
+        height: 100%;
+
+        padding: 0 5rem;
+
+        text-align: left;
+        color: variables.$blue-100;
+        font-size: $text-size;
+        font-family: variables.$font-coolvetica-hv-comp;
+        line-height: $line-height;
+
+        .specialFont {
+            display: inline;
+
+            background-color: red;
+            font-size: calc($text-size - 5rem);
+            font-family: variables.$font-garamond-italic;
+
+            white-space: nowrap;
+        }
+    }
+
+    .bioContainer {
+        height: 100%;
+        width: 50%;
+
+        .bio {
+            width: 100%;
+            height: variables.$aboutSectionHeight;
+        }
+    }
 }
