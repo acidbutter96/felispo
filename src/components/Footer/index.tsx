@@ -1,4 +1,4 @@
-"use app";
+"use client";
 import React from "react";
 import styles from "./styles.module.scss";
 

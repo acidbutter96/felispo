@@ -1,4 +1,4 @@
-"use app";
+"use client";
 import React from "react";
 import { Header } from "@/components/Header";
 import { Felispo } from "@/containers/home/Felispo";
