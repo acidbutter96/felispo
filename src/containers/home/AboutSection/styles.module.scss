@@ -1,4 +1,4 @@
-@use 'src/styles/variables' as variables;
+@use '@/styles/variables' as variables;
 
 $text-size: calc(variables.$font-size-10 * 1.45);
 $line-height: calc(variables.$font-size-10 * 1.3);

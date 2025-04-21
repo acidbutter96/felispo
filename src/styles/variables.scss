@@ -1,3 +1,5 @@
+// colors
+
 $black: #000;
 $blue-100: #6086BB;
 $blue-200: #4B6FBB;
@@ -12,10 +14,15 @@ $pink-300: #FF4B5C;
 $white-8: #f8f8f8;
 $white: #fff;
 
+// heights, widths and weights
+
 $border-weight: 0.1rem;
 $header-height: 4rem;
+$felispo-height: calc(100vh - $header-height);
 $actFacadeHeight: 13.67rem;
 $aboutSectionHeight: 35rem;
+
+// fonts
 
 $font-roboto: 'Roboto', sans-serif;
 $font-coolvetica-hv-comp: 'Coolvetica Hv Comp', sans-serif;
@@ -27,6 +34,8 @@ $font-garamond-bold: 'AGaramondPro-Bold', sans-serif;
 $font-garamond-bold-italic: 'AGaramondPro-BoldItalic', sans-serif;
 $font-garamond-italic: 'AGaramondPro-Italic', sans-serif;
 $font-garamond-regular: 'AGaramondPro-Regular', sans-serif;
+
+// font sizes
 
 $font-size: 1.15rem;
 $font-size-2: 1.25rem;
