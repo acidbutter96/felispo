@@ -13,8 +13,8 @@ export const AboutSection = (): React.JSX.Element => {
                 dolor sit amet,
                 consectetuer
                 adipiscing elit,
-                sed diam
-                <span className={styles.specialFont}>nonummy</span> nibh
+                sed diam&nbsp;
+                <span className={styles.specialFont}>nonummy</span>&nbsp;nibh
                 Lorem ipsum
                 dolor sit amet,
                 consectetuer
