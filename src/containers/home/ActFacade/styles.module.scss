@@ -1,0 +1,53 @@
+@use 'src/styles/variables' as variables;
+
+.actFacadeContainer {
+    display: flex;
+
+    position: relative;
+
+    width: 100%;
+    height: variables.$actFacadeHeight;
+
+    .actFacade {
+        position: absolute;
+
+        display: flex;
+        width: 100%;
+    }
+}
+
+.textContainer {
+    display: flex;
+    width: 75%;
+    height: 100%;
+
+    font-size: variables.$font-size-25;
+    font-family: variables.$font-coolvetica-hv-comp;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: end;
+    justify-content: start;
+
+    left: -1.5rem;
+    position: relative;
+
+    span {
+        font-size: variables.$font-size-20;
+        font-family: variables.$font-garamond-bold-italic;
+        text-align: center;
+    }
+}
+
+.cloudContainer {
+    width: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cloud {
+        width: 60%;
+        height: 60%;
+    }
+}

@@ -12,4 +12,17 @@
   width: 100vw;
 
   overflow-y: scroll;
+
+  footer {
+    position: relative;
+    margin-top: 2rem;
+
+    background-color: red;
+  }
+}
+
+
+.wrapper {
+  position: relative;
+  min-height: variables.$actFacadeHeight;
 }
