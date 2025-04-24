@@ -14,7 +14,7 @@ export const Header = (): React.JSX.Element => {
                 <div className={styles.menuContainer}>
                     <ul>
                         <li>
-                            <a href="#home">SOBRE</a>
+                            <a href="#home" className="hoverable">SOBRE</a>
                         </li>
                         <li>
                             <a href="#about">PROJETOS</a>
