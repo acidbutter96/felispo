@@ -49,15 +49,15 @@ export const Portfolio = (): React.JSX.Element => {
                 <div className={styles.thirdRow}>
                     <div className={styles.firstColumn}>
                         <div className={styles.sixthJob}>
-                            job 6
+                            <Image alt="" src={"/static/images/projects/06 ❤️.png"} width={500} height={500}/>
                         </div>
                         <div className={styles.eighthJob}>
-                            job 8
+                            <Image alt="" src={"/static/images/projects/08 💚.png"} width={500} height={500}/>
                         </div>
                     </div>
                     <div className={styles.secondColumn}>
                         <div className={styles.seventhJob}>
-                            job 7
+                            <Image alt="" src={"/static/images/projects/07 ❤️.png"} width={500} height={500}/>
                         </div>
                     </div>
                 </div>

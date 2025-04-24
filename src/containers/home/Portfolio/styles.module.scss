@@ -93,3 +93,45 @@ $other: calc((100% - $second)/2);
         width: $other;
     }
 }
+
+$firstColumn: 46%;
+$secondColumn: calc(100% - 40%);
+
+.thirdRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 1;
+    min-height: 100%;
+
+    padding: 0;
+
+    .firstColumn {
+        width: $firstColumn;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: hidden;
+
+        .sixthJob {
+            min-height: 15rem;
+        }
+
+        .eighthJob {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .secondColumn {
+        width: $secondColumn;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .seventhJob {
+            flex-grow: 1;
+        }
+    }
+}
