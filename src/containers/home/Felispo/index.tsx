@@ -1,6 +1,6 @@
 "user client"
-import React from 'react';
-import Image from 'next/image';
+import React, { useEffect, useRef } from 'react';
+// import Image from 'next/image';
 import styles from './styles.module.scss';
 
 
