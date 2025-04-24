@@ -7,14 +7,18 @@ import styles from './styles.module.scss';
 export const Felispo = (): React.JSX.Element => {
     return (
         <div className={styles.container}>
-            <div className={styles.imageContainer}>
-                <Image
-                    src="/static/images/felispo.png"
-                    alt="Felispo Logo"
+            <div className={styles.videoContainer}>
+                <video
                     width={500}
-                    height={300}
-                    className={styles.image}
-                />
+                    height={500}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className={styles.video}
+                >
+                    <source src="/static/videos/felispo.webm" type="video/webm" />
+                </video>
             </div>
             {/* <div className={styles.cavalinhoContainer}>
                 <Image
