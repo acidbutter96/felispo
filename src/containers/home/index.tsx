@@ -3,6 +3,7 @@ import React from "react";
 import { Header } from "@/components/Header";
 import { Felispo } from "@/containers/home/Felispo";
 import { ActFacade } from "@/containers/home/ActFacade";
+import { Portfolio } from "@/containers/home/Portfolio";
 import { AboutSection } from "@/containers/home/AboutSection";
 import { Footer } from "@/components/Footer";
 
@@ -13,6 +14,7 @@ export const Home = (): React.JSX.Element => {
             <Felispo />
             <ActFacade />
             <AboutSection />
+            <Portfolio />
             <Footer />
         </>
     )

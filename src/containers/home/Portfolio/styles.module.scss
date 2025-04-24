@@ -1,0 +1,68 @@
+@use "@/styles/variables.scss" as variables;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    position: relative;
+}
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 1;
+    min-height: 100%;
+
+    padding: 0;
+
+    .firstColumn {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: hidden;
+
+        .firstJob {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .secondColumn {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        .secondJob {
+            flex-grow: 1;
+        }
+    }
+
+    .aboutJobsContainer {
+        min-height: 15rem;
+        font-size: variables.$font-size-3;
+        text-transform: uppercase;
+
+        .aboutJobsTitle {
+            display: block;
+            padding: 1rem 2rem;
+            font-family: variables.$font-garamond-bold;
+            font-size: variables.$font-size-6;
+            border-bottom: variables.$border-weight solid variables.$grey-100;
+
+            span {
+                font-family: variables.$font-garamond-bold-italic;
+            }
+        }
+
+        .aboutText {
+            padding: 2rem;
+            font-family: variables.$font-garamond-regular;
+        }
+    }
+}
