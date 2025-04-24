@@ -35,15 +35,15 @@ export const Portfolio = (): React.JSX.Element => {
                         </div>
                     </div>
                 </div>
-                {/* <div className={styles.secondRow}>
+                <div className={styles.secondRow}>
                     <div className={styles.thirdJob}>
-                        job 3
+                        <Image alt="" src={"/static/images/projects/03 ❤️.png"} width={500} height={500}/>
                     </div>
                     <div className={styles.fourthJob}>
-                        job 4
+                        <Image alt="" src={"/static/images/projects/04 ❤️.png"} width={500} height={500}/>
                     </div>
                     <div className={styles.fifthJob}>
-                        job 5
+                        <Image alt="" src={"/static/images/projects/05 ❤️.png"} width={500} height={500}/>
                     </div>
                 </div>
                 <div className={styles.thirdRow}>
@@ -60,7 +60,7 @@ export const Portfolio = (): React.JSX.Element => {
                             job 7
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
         </div>
     );

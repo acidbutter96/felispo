@@ -66,3 +66,30 @@
         }
     }
 }
+
+$second: 35%;
+$other: calc((100% - $second)/2);
+
+.secondRow {
+    display: flex;
+
+    height: calc(100vh/1.5);
+    width: 100vw;
+
+    div  {
+        height: 100%;
+    }
+
+    .thirdJob {
+        width: $other;
+    }
+
+    .fourthJob {
+        width: $second;
+
+    }
+
+    .fifthJob {
+        width: $other;
+    }
+}
