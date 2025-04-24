@@ -1,6 +1,6 @@
 @use '@/styles/variables' as variables;
 
-$text-size: calc(variables.$font-size-10 * 1.45);
+$text-size: calc(variables.$font-size-10 * 1.6);
 $line-height: calc(variables.$font-size-10 * 1.3);
 $text-container-width: 56%;
 $bio-container-width: calc(100% - $text-container-width);
@@ -9,7 +9,7 @@ $bio-container-width: calc(100% - $text-container-width);
     position: relative;
     display: flex;
 
-    height: variables.$aboutSectionHeight;
+    height: calc(variables.$aboutSectionHeight + 4rem);
 }
 
 .about {
