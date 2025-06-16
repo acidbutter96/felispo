@@ -17,7 +17,7 @@ export const Felispo = (): React.JSX.Element => {
                     className={styles.video}
                     autoPlay
                 >
-                    <source src="/static/videos/felispo.webm" type="video/webm" />
+                    <source src="/static/videos/felispo.hvec.mp4" type="video/mp4; codecs=hev1" />
                 </video>
             </div>
             <div className={styles.cavalinhoContainer}>

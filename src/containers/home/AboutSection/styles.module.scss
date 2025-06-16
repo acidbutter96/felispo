@@ -9,6 +9,8 @@ $bio-container-width: calc(100% - $text-container-width);
     position: relative;
     display: flex;
 
+    background-color: red;
+
     height: calc(variables.$aboutSectionHeight + 4rem);
 }
 

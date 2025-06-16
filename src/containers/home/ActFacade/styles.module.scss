@@ -6,7 +6,7 @@
     position: relative;
 
     width: 100%;
-    height: variables.$actFacadeHeight;
+    
 
     .actFacade {
         position: absolute;
@@ -36,6 +36,40 @@
         font-size: variables.$font-size-20;
         font-family: variables.$font-garamond-bold-italic;
         text-align: center;
+    }
+
+    @media screen and (max-width: 1440px) {
+        font-size: variables.$font-size-22;
+
+        span {
+            font-size: variables.$font-size-15;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        font-size: variables.$font-size-15;
+
+        span {
+            font-size: variables.$font-size-10;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: variables.$font-size-10;
+
+        span {
+            font-size: variables.$font-size-9;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: variables.$font-size-9;
+        padding: 0 0.5rem;
+
+        span {
+            font-size: variables.$font-size-7;
+        }
     }
 }
 
