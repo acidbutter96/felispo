@@ -9,9 +9,7 @@ $bio-container-width: calc(100% - $text-container-width);
     position: relative;
     display: flex;
 
-    background-color: red;
-
-    height: calc(variables.$aboutSectionHeight + 4rem);
+    min-height: variables.$aboutSectionHeight;
 }
 
 .about {
@@ -56,7 +54,7 @@ $bio-container-width: calc(100% - $text-container-width);
 
         .bio {
             width: 100%;
-            height: variables.$aboutSectionHeight;
+            min-height: variables.$aboutSectionHeight;
         }
     }
 }

@@ -1,10 +1,25 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
+function isSafari() {
+    if (typeof window === "undefined") return false;
+    return (
+        /^((?!chrome|android).)*safari/i.test(navigator.userAgent) ||
+        (!!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/))
+    );
+}
+
 export const Felispo = (): React.JSX.Element => {
     const videoRef = useRef<HTMLVideoElement>(null);
+    const [videoSrc, setVideoSrc] = useState("/static/videos/felispo.webm");
+
+    useEffect(() => {
+        if (!isSafari()) {
+            setVideoSrc("/static/videos/felispo.white.webm");
+        }
+    }, []);
 
     return (
         <div className={styles.container}>
@@ -17,7 +32,7 @@ export const Felispo = (): React.JSX.Element => {
                     className={styles.video}
                     autoPlay
                 >
-                    <source src="/static/videos/felispo.hvec.mp4" type="video/mp4; codecs=hev1" />
+                    <source src={videoSrc} type="video/webm" />
                 </video>
             </div>
             <div className={styles.cavalinhoContainer}>

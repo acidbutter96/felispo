@@ -22,7 +22,7 @@ export const AboutSection = (): React.JSX.Element => {
                 <div className={styles.bioContainer}>
                     <Image
                         alt='cloud'
-                        src='/static/images/bio.png'
+                        src='/static/images/biopic.png'
                         width={400}
                         height={400}
                         className={styles.bio}
