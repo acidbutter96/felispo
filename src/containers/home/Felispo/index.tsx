@@ -39,8 +39,11 @@ export const Felispo = (): React.JSX.Element => {
                 </video>
             </div>
             <div className={styles.facadesContainer}>
-                <div className={styles.firstBox}></div>
-                <div className={styles.secondBox}></div>
+                {
+                    isSafari() ? <></> : <><div className={styles.firstBox}></div>
+                    <div className={styles.secondBox}></div>
+                    </>
+                }
             </div>
         </div>
     );
