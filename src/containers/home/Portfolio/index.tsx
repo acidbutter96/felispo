@@ -45,7 +45,7 @@ export const Portfolio = (): React.JSX.Element => {
                         </div>
                     </a>
                 </div>
-                <div className={styles.secondRow}>
+                {/* <div className={styles.secondRow}>
                     <a
                         className={styles.facadeJob}
                         href="https://example.com"
@@ -62,7 +62,7 @@ export const Portfolio = (): React.JSX.Element => {
                             <source src={"/static/videos/projects/aleda.webm"} type={"video/webm"} />
                         </video>
                     </a>
-                    {/* <div className={styles.thirdJob}>
+                    <div className={styles.thirdJob}>
                         <Image alt="" src={"/static/images/projects/03 ❤️.png"} width={500} height={500}/>
                     </div>
                     <div className={styles.fourthJob}>
@@ -70,8 +70,8 @@ export const Portfolio = (): React.JSX.Element => {
                     </div>
                     <div className={styles.fifthJob}>
                         <Image alt="" src={"/static/images/projects/05 ❤️.png"} width={500} height={500}/>
-                    </div> */}
-                </div>
+                    </div>
+                </div> */}
                 <div className={styles.thirdRow}>
                     <div className={styles.firstColumn}>
                         <a
