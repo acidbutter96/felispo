@@ -58,6 +58,12 @@
 
 .titleContainer {
     width: 25%;
+
+    @media screen and (max-width: 658px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .menuContainer {
@@ -84,6 +90,16 @@
             &:last-child {
                 margin-left: auto;
             }
+        }
+    }
+
+    @media screen and (max-width: 658px) {
+        display: none;
+    }
+
+    .contactLi {
+        @media screen and (max-width: 848px) {
+            display: none;
         }
     }
 }

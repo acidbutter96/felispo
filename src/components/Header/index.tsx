@@ -22,7 +22,7 @@ export const Header = (): React.JSX.Element => {
                         <li>
                             <a href="#services">CURRICULO</a>
                         </li>
-                        <li>
+                        <li className={styles.contactLi}>
                             <a href="#contact">CONTATO</a>
                         </li>
                     </ul>
