@@ -1,7 +1,7 @@
 @use "@/styles/variables.scss" as variables;
 
 .main {
-  background-color: var(--white-8);
+  background-color: variables.$white-grey;
 }
 
 .container {
