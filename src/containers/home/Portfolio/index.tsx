@@ -45,8 +45,24 @@ export const Portfolio = (): React.JSX.Element => {
                         </div>
                     </a>
                 </div>
-                {/* <div className={styles.secondRow}>
-                    <div className={styles.thirdJob}>
+                <div className={styles.secondRow}>
+                    <a
+                        className={styles.facadeJob}
+                        href="https://example.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <video
+                            muted
+                            playsInline
+                            loop
+                            className={styles.video}
+                            autoPlay
+                        >
+                            <source src={"/static/videos/projects/aleda.webm"} type={"video/webm"} />
+                        </video>
+                    </a>
+                    {/* <div className={styles.thirdJob}>
                         <Image alt="" src={"/static/images/projects/03 ❤️.png"} width={500} height={500}/>
                     </div>
                     <div className={styles.fourthJob}>
@@ -54,8 +70,8 @@ export const Portfolio = (): React.JSX.Element => {
                     </div>
                     <div className={styles.fifthJob}>
                         <Image alt="" src={"/static/images/projects/05 ❤️.png"} width={500} height={500}/>
-                    </div>
-                </div> */}
+                    </div> */}
+                </div>
                 <div className={styles.thirdRow}>
                     <div className={styles.firstColumn}>
                         <a
@@ -64,7 +80,15 @@ export const Portfolio = (): React.JSX.Element => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image alt="" src={"/static/images/projects/06 ❤️.png"} width={500} height={500}/>
+                            <video
+                                muted
+                                playsInline
+                                loop
+                                className={styles.video}
+                                autoPlay
+                            >
+                                <source src={"/static/videos/projects/google.webm"} type={"video/webm"} />
+                            </video>
                         </a>
                         <a
                             className={styles.eighthJob}
@@ -76,14 +100,14 @@ export const Portfolio = (): React.JSX.Element => {
                         </a>
                     </div>
                     <div className={styles.secondColumn}>
-                        <a
+                        {/* <a
                             className={styles.seventhJob}
                             href="https://example.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             <Image alt="" src={"/static/images/projects/07 ❤️.png"} width={500} height={500}/>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
