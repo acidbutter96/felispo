@@ -38,7 +38,7 @@ export const Portfolio = (): React.JSX.Element => {
                         href="https://www.behance.net/gallery/224823973/Ilustracao-autoral-01"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={styles.secondColumn}
+                        className={styles.frstRowsecondColumn}
                     >
                         <div className={styles.secondJob}>
                             <Image alt="" src={"/static/images/projects/autoral-1.png"} width={500} height={500}/>
