@@ -25,17 +25,27 @@ export const Portfolio = (): React.JSX.Element => {
                                 Ut aliquip ex ea commodo
                             </div>
                         </div>
-                        <div className={styles.firstJob}>
+                        <a
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.firstJob}
+                        >
                             <Image alt="" src={"/static/images/projects/01 ❤️.png"} width={500} height={500}/>
-                        </div>
+                        </a>
                     </div>
-                    <div className={styles.secondColumn}>
+                    <a
+                        href="https://www.behance.net/gallery/224823973/Ilustracao-autoral-01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.secondColumn}
+                    >
                         <div className={styles.secondJob}>
                             <Image alt="" src={"/static/images/projects/02 💚.png"} width={500} height={500}/>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div className={styles.secondRow}>
+                {/* <div className={styles.secondRow}>
                     <div className={styles.thirdJob}>
                         <Image alt="" src={"/static/images/projects/03 ❤️.png"} width={500} height={500}/>
                     </div>
@@ -45,20 +55,35 @@ export const Portfolio = (): React.JSX.Element => {
                     <div className={styles.fifthJob}>
                         <Image alt="" src={"/static/images/projects/05 ❤️.png"} width={500} height={500}/>
                     </div>
-                </div>
+                </div> */}
                 <div className={styles.thirdRow}>
                     <div className={styles.firstColumn}>
-                        <div className={styles.sixthJob}>
+                        <a
+                            className={styles.sixthJob}
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Image alt="" src={"/static/images/projects/06 ❤️.png"} width={500} height={500}/>
-                        </div>
-                        <div className={styles.eighthJob}>
+                        </a>
+                        <a
+                            className={styles.eighthJob}
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Image alt="" src={"/static/images/projects/08 💚.png"} width={500} height={500}/>
-                        </div>
+                        </a>
                     </div>
                     <div className={styles.secondColumn}>
-                        <div className={styles.seventhJob}>
+                        <a
+                            className={styles.seventhJob}
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Image alt="" src={"/static/images/projects/07 ❤️.png"} width={500} height={500}/>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

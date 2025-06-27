@@ -2,24 +2,28 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import { isSafari } from "@/utils/isSafari";
 
-function isSafari() {
-    if (typeof window === "undefined") return false;
-    return (
-        /^((?!chrome|android).)*safari/i.test(navigator.userAgent) ||
-        (!!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/))
-    );
-}
 
 export const Felispo = (): React.JSX.Element => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [videoSrc, setVideoSrc] = useState("/static/videos/felispo.webm");
 
     useEffect(() => {
-        if (!isSafari()) {
+        if (isSafari()) {
             setVideoSrc("/static/videos/felispo.white.webm");
+        } else {
+            setVideoSrc("/static/videos/felispo.webm");
+        }
+
+        if (videoRef.current) {
+            videoRef.current.load();
         }
     }, []);
+
+    // useEffect(() => {
+        
+    // }, [videoSrc]);
 
     return (
         <div className={styles.container}>
