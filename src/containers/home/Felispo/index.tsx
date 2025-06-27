@@ -8,22 +8,21 @@ import { isSafari } from "@/utils/isSafari";
 export const Felispo = (): React.JSX.Element => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [videoSrc, setVideoSrc] = useState("/static/videos/felispo.webm");
+    const [videoType, setVideoType] = useState("video/webm");
 
     useEffect(() => {
         if (isSafari()) {
-            setVideoSrc("/static/videos/felispo.white.webm");
+            setVideoSrc("/static/videos/felispo.mp4");
+            setVideoType("video/mp4");
         } else {
             setVideoSrc("/static/videos/felispo.webm");
+            setVideoType("video/webm");
         }
 
         if (videoRef.current) {
             videoRef.current.load();
         }
     }, []);
-
-    // useEffect(() => {
-        
-    // }, [videoSrc]);
 
     return (
         <div className={styles.container}>
@@ -36,7 +35,7 @@ export const Felispo = (): React.JSX.Element => {
                     className={styles.video}
                     autoPlay
                 >
-                    <source src={videoSrc} type="video/webm" />
+                    <source src={videoSrc} type={videoType} />
                 </video>
             </div>
             <div className={styles.cavalinhoContainer}>
