@@ -25,14 +25,14 @@ export const Portfolio = (): React.JSX.Element => {
                                 Ut aliquip ex ea commodo
                             </div>
                         </div>
-                        <a
+                        {/* <a
                             href="https://example.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.firstJob}
                         >
-                            <Image alt="" src={"/static/images/projects/01 ❤️.png"} width={500} height={500}/>
-                        </a>
+                            <Image alt="" src={"/static/images/projects/svrvrv.png"} width={500} height={500}/>
+                        </a> */}
                     </div>
                     <a
                         href="https://www.behance.net/gallery/224823973/Ilustracao-autoral-01"
@@ -41,7 +41,7 @@ export const Portfolio = (): React.JSX.Element => {
                         className={styles.secondColumn}
                     >
                         <div className={styles.secondJob}>
-                            <Image alt="" src={"/static/images/projects/02 💚.png"} width={500} height={500}/>
+                            <Image alt="" src={"/static/images/projects/autoral-1.png"} width={500} height={500}/>
                         </div>
                     </a>
                 </div>
@@ -96,18 +96,18 @@ export const Portfolio = (): React.JSX.Element => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image alt="" src={"/static/images/projects/08 💚.png"} width={500} height={500}/>
+                            <Image alt="" src={"/static/images/projects/svrvrv.png"} width={500} height={500}/>
                         </a>
                     </div>
                     <div className={styles.secondColumn}>
-                        {/* <a
-                            className={styles.seventhJob}
+                        <a
+                            className={styles.eighthJob}
                             href="https://example.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image alt="" src={"/static/images/projects/07 ❤️.png"} width={500} height={500}/>
-                        </a> */}
+                            <Image alt="" src={"/static/images/projects/ynot.png"} width={500} height={500}/>
+                        </a>
                     </div>
                 </div>
             </div>

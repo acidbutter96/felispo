@@ -1,5 +1,7 @@
 @use "@/styles/variables.scss" as variables;
 
+$second: 35%;
+$other: calc((100% - $second)/2);
 
 .container {
     display: flex;
@@ -7,7 +9,30 @@
 
     min-height: 100vh;
     position: relative;
+
+    .firstJob {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .secondJob {
+        flex-grow: 1;
+    }
+    
+    .thirdJob {
+        width: $other;
+    }
+    
+    .fourthJob {
+        width: $second;
+    
+    }
+    
+    .fifthJob {
+        width: $other;
+    }
 }
+
 
 .firstRow {
     display: flex;
@@ -19,28 +44,25 @@
 
     padding: 0;
 
+    $firstColumn: 45%;
+    $secondColumn: calc(100% - $firstColumn);
+
     .firstColumn {
-        width: 40%;
+        width: $firstColumn;
         display: flex;
         flex-direction: column;
         height: 100%;
         overflow-y: hidden;
 
-        .firstJob {
-            width: 100%;
-            height: 100%;
-        }
     }
 
     .secondColumn {
-        width: 60%;
+        width: $secondColumn;
         display: flex;
         flex-direction: column;
         align-items: stretch;
 
-        .secondJob {
-            flex-grow: 1;
-        }
+
     }
 
     .aboutJobsContainer {
@@ -67,9 +89,6 @@
     }
 }
 
-$second: 35%;
-$other: calc((100% - $second)/2);
-
 .secondRow {
     display: flex;
 
@@ -78,19 +97,6 @@ $other: calc((100% - $second)/2);
 
     div  {
         height: 100%;
-    }
-
-    .thirdJob {
-        width: $other;
-    }
-
-    .fourthJob {
-        width: $second;
-
-    }
-
-    .fifthJob {
-        width: $other;
     }
 
     .facadeJob {
