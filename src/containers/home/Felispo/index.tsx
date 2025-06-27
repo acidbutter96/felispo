@@ -38,17 +38,6 @@ export const Felispo = (): React.JSX.Element => {
                     <source src={videoSrc} type={videoType} />
                 </video>
             </div>
-            <div className={styles.cavalinhoContainer}>
-                <div className={styles.cavalinho}>
-                    <Image
-                        src="/static/images/cavalinho.gif" // Path to cavalinho.gif
-                        alt="Cavalinho Animation"
-                        width={300} // Adjust width as needed
-                        height={300} // Adjust height as needed
-                        className={styles.cavalinhoImage} // Optional: Add a class for styling
-                    />
-                </div>
-            </div>
             <div className={styles.facadesContainer}>
                 <div className={styles.firstBox}></div>
                 <div className={styles.secondBox}></div>
