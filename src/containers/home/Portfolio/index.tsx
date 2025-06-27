@@ -25,14 +25,14 @@ export const Portfolio = (): React.JSX.Element => {
                                 Ut aliquip ex ea commodo
                             </div>
                         </div>
-                        {/* <a
+                        <a
                             href="https://example.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.firstJob}
                         >
-                            <Image alt="" src={"/static/images/projects/svrvrv.png"} width={500} height={500}/>
-                        </a> */}
+                            <Image alt="" src={"/static/images/projects/three-body-problem.jpg"} width={500} height={500}/>
+                        </a>
                     </div>
                     <a
                         href="https://www.behance.net/gallery/224823973/Ilustracao-autoral-01"
