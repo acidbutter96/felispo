@@ -108,6 +108,22 @@ export const Portfolio = (): React.JSX.Element => {
                         >
                             <Image alt="" src={"/static/images/projects/ynot.png"} width={500} height={500}/>
                         </a>
+                        <a
+                            className={styles.ninethJob}
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <video
+                                muted
+                                playsInline
+                                loop
+                                className={styles.video}
+                                autoPlay
+                            >
+                                <source src={"/static/videos/projects/aleda.webm"} type={"video/webm"} />
+                            </video>
+                        </a>
                     </div>
                 </div>
             </div>
