@@ -14,6 +14,14 @@
         display: flex;
         width: 100%;
     }
+
+    @media screen and (max-width: 920px) {
+        height: 8rem;
+    }
+
+    @media screen and (max-width: 506px) {
+        height: 5.5rem;
+    }
 }
 
 .textContainer {
@@ -39,10 +47,18 @@
     }
 
     @media screen and (max-width: 1440px) {
-        font-size: variables.$font-size-25;
+        font-size: variables.$font-size-20;
 
         span {
-            font-size: variables.$font-size-20;
+            font-size: variables.$font-size-15;
+        }
+    }
+
+    @media screen and (max-width: 921px) {
+        font-size: calc(variables.$font-size-20 * 0.7);
+
+        span {
+            font-size: calc(variables.$font-size-15 * 0.7);
         }
     }
 
