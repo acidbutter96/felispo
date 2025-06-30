@@ -39,14 +39,14 @@
     }
 
     @media screen and (max-width: 1440px) {
-        font-size: variables.$font-size-22;
+        font-size: variables.$font-size-25;
 
         span {
-            font-size: variables.$font-size-15;
+            font-size: variables.$font-size-20;
         }
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 772px) {
         width: 100%;
         font-size: variables.$font-size-15;
 
@@ -55,20 +55,42 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
-        font-size: variables.$font-size-10;
+    @media screen and (max-width: 622px) {
+        font-size: calc(variables.$font-size-10 * 1.4);
+        padding: 0 0.5rem;
+
+        width: 100%;
+        position: relative;
+        z-index: 2;
 
         span {
-            font-size: variables.$font-size-9;
+            font-size: calc(variables.$font-size-7 * 1.6);
         }
     }
 
-    @media screen and (max-width: 480px) {
-        font-size: variables.$font-size-9;
+    @media screen and (max-width: 578px) {
+        font-size: calc(variables.$font-size-10 * 1.3);
         padding: 0 0.5rem;
 
+        width: 100%;
+        position: relative;
+        z-index: 2;
+
         span {
-            font-size: variables.$font-size-7;
+            font-size: calc(variables.$font-size-7 * 1.5);
+        }
+    }
+
+    @media screen and (max-width: 506px) {
+        font-size: variables.$font-size-10;
+        padding: 0 0.5rem;
+
+        width: 100%;
+        position: relative;
+        z-index: 2;
+
+        span {
+            font-size: calc(variables.$font-size-7 * 1.2);
         }
     }
 }
@@ -80,8 +102,22 @@
     align-items: center;
     justify-content: center;
 
+    position: relative;
+
     .cloud {
         width: 60%;
         height: 60%;
+    }
+
+    @media screen and (max-width: 622px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
