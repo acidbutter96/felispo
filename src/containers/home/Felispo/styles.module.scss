@@ -48,6 +48,10 @@
 
         border-left: variables.$border-weight solid variables.$grey-0;
         border-right: variables.$border-weight solid variables.$grey-0;
+
+        @media screen and (max-width: 1006px) {
+            display: none;
+        }
     }
 
     .firstBox {
