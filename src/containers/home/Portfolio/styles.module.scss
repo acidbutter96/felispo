@@ -30,6 +30,69 @@ $other: calc((100% - $second)/2);
 
 }
 
+.mobileAboutJobs {
+    display: none;
+
+    @media screen and (max-width: 701px) {
+        display: block;
+
+        .aboutJobsContainer {
+            max-height: 25rem;
+
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.aboutJobsContainer {
+    min-height: 10rem;
+    font-size: variables.$font-size-3;
+    text-transform: uppercase;
+
+    height: 20rem;
+
+    .aboutJobsTitle {
+        display: block;
+        padding: 1rem 2rem;
+        font-family: variables.$font-garamond-bold;
+        font-size: variables.$font-size-6;
+        border-bottom: variables.$border-weight solid variables.$grey-100;
+
+        span {
+            font-family: variables.$font-garamond-bold-italic;
+        }
+    }
+
+    .aboutText {
+        padding: 2rem;
+        font-family: variables.$font-garamond-regular;
+    }
+
+    @media screen and (max-width: 1443px) {
+        height: 25rem;
+    }
+
+    @media screen and (max-width: 1215px) {
+        height: 20rem;
+
+        .aboutJobsTitle {
+            font-size: variables.$font-size-4;
+        }
+
+        .aboutText {
+            font-size: variables.$font-size;
+        }
+    }
+
+    @media screen and (max-width: 895px) {
+        height: 25rem;
+    }
+
+    @media screen and (max-width: 701px) {
+        height: 35rem;
+    }
+}
+
 .firstRow {
     display: flex;
     flex-direction: row;
@@ -63,54 +126,7 @@ $other: calc((100% - $second)/2);
         align-items: stretch;
     }
 
-    .aboutJobsContainer {
-        min-height: 10rem;
-        font-size: variables.$font-size-3;
-        text-transform: uppercase;
-
-        height: 20rem;
-
-        .aboutJobsTitle {
-            display: block;
-            padding: 1rem 2rem;
-            font-family: variables.$font-garamond-bold;
-            font-size: variables.$font-size-6;
-            border-bottom: variables.$border-weight solid variables.$grey-100;
-
-            span {
-                font-family: variables.$font-garamond-bold-italic;
-            }
-        }
-
-        .aboutText {
-            padding: 2rem;
-            font-family: variables.$font-garamond-regular;
-        }
-
-        @media screen and (max-width: 1443px) {
-            height: 25rem;
-        }
-
-        @media screen and (max-width: 1215px) {
-            height: 20rem;
-
-            .aboutJobsTitle {
-                font-size: variables.$font-size-4;
-            }
-
-            .aboutText {
-                font-size: variables.$font-size;
-            }
-        }
-
-        @media screen and (max-width: 895px) {
-            height: 25rem;
-        }
-
-        @media screen and (max-width: 701px) {
-            height: 35rem;
-        }
-    }
+    
 
     .firstJob {
         display: flex;
@@ -207,6 +223,8 @@ $secondColumn: calc(100% - 40%);
             overflow-y: hidden;
             position: relative;
 
+            background-color: variables.$pink-300;
+
             video {
                 height: 100%;
                 width: 100%;
@@ -215,6 +233,29 @@ $secondColumn: calc(100% - 40%);
                 display: block;
                 margin: 0 auto;
             }
+        }
+    }
+
+    .mobileNinethJob {
+        display: none;
+    }
+
+    @media screen and (max-width: 701px) {
+        flex-direction: column;
+        align-items: stretch;
+
+        .firstColumn,
+        .secondColumn {
+            width: 100%;
+            min-width: 0;
+            max-width: 100%;
+        }
+
+        .mobileNinethJob {
+            display: block;
+
+            background-color: variables.$pink-100;
+
         }
     }
 }
@@ -244,5 +285,19 @@ $secondColumn: calc(100% - 40%);
     &:focus-visible > * {
         transform: scale(1.06);
         
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .firstRow {
+        flex-direction: column;
+        align-items: stretch;
+
+        .firstColumn,
+        .frstRowsecondColumn {
+            width: 100%;
+            min-width: 0;
+            max-width: 100%;
+        }
     }
 }

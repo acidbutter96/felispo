@@ -6,7 +6,25 @@ import Image from "next/image";
 export const Portfolio = (): React.JSX.Element => {
     return (
         <div className={styles.container}>
-            <div className={styles.absoluteContainer}>
+            <div>
+                <div className={styles.mobileAboutJobs}>
+                    <div className={styles.aboutJobsContainer}>
+                        <div className={styles.aboutJobsTitle}>
+                            Trabalhos <span>Selecionados</span>
+                        </div>
+                        <div className={styles.aboutText}>
+                            Lorem ipsum dolor sit amet
+                            Consectetuer adipiscing elit sed
+                            Diam nonummy nibh euismod
+                            Tincidunt ut laoreet dolore
+                            Magna aliquam erat volutpat ut
+                            Wisi enim ad minim veniam quis
+                            Nostrud exerci tation
+                            Ullamcorper suscipit lobortis nisl
+                            Ut aliquip ex ea commodo
+                        </div>
+                    </div>
+                </div>
                 <div className={styles.firstRow}>
                     <div className={styles.firstColumn}>
                         <div className={styles.aboutJobsContainer}>
@@ -31,7 +49,7 @@ export const Portfolio = (): React.JSX.Element => {
                             rel="noopener noreferrer"
                             className={styles.firstJob}
                         >
-                            <Image alt="" src={"/static/images/projects/three-body-problem.jpg"} width={500} height={500}/>
+                            <Image alt="" src={"/static/images/projects/three-body-problem.jpg"} width={500} height={500} />
                         </a>
                     </div>
                     <a
@@ -41,7 +59,7 @@ export const Portfolio = (): React.JSX.Element => {
                         className={styles.frstRowsecondColumn}
                     >
                         <div className={styles.secondJob}>
-                            <Image alt="" src={"/static/images/projects/autoral-1.png"} width={500} height={500}/>
+                            <Image alt="" src={"/static/images/projects/autoral-1.png"} width={500} height={500} />
                         </div>
                     </a>
                 </div>
@@ -96,7 +114,7 @@ export const Portfolio = (): React.JSX.Element => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image alt="" src={"/static/images/projects/svrvrv.png"} width={500} height={500}/>
+                            <Image alt="" src={"/static/images/projects/svrvrv.png"} width={500} height={500} />
                         </a>
                     </div>
                     <div className={styles.secondColumn}>
@@ -106,7 +124,7 @@ export const Portfolio = (): React.JSX.Element => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image alt="" src={"/static/images/projects/ynot.png"} width={500} height={500}/>
+                            <Image alt="" src={"/static/images/projects/ynot.png"} width={500} height={500} />
                         </a>
                         <a
                             className={styles.ninethJob}
@@ -125,6 +143,22 @@ export const Portfolio = (): React.JSX.Element => {
                             </video>
                         </a>
                     </div>
+                    <a
+                        className={styles.mobileNinethJob}
+                        href="https://example.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <video
+                            muted
+                            playsInline
+                            loop
+                            className={styles.video}
+                            autoPlay
+                        >
+                            <source src={"/static/videos/projects/aleda.webm"} type={"video/webm"} />
+                        </video>
+                    </a>
                 </div>
             </div>
         </div>
