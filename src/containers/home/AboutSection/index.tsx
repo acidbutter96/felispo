@@ -13,8 +13,7 @@ export const AboutSection = (): React.JSX.Element => {
                 dolor sit amet,
                 consectetuer
                 adipiscing elit,
-                sed diam&nbsp;
-                <span className={styles.specialFont}>nonummy</span>&nbsp;nibh
+                sed diam <span className={styles.specialFont}>nonummy</span> nibh
                 Lorem ipsum
                 dolor sit amet,
                 consectetuer
@@ -23,8 +22,8 @@ export const AboutSection = (): React.JSX.Element => {
                     <Image
                         alt='cloud'
                         src='/static/images/biopic.png'
-                        width={400}
-                        height={400}
+                        width={1000}
+                        height={1000}
                         className={styles.bio}
                     />
                 </div>
