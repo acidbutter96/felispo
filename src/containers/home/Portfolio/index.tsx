@@ -6,7 +6,7 @@ import { isSafari } from "@/utils/isSafari";
 
 export const Portfolio = (): React.JSX.Element => {
     const videoRef = useRef<HTMLVideoElement>(null);
-    
+
     const [videoSrc, setVideoSrc] = useState<string[]>([
         "/static/videos/projects/google.webm",
         "/static/videos/projects/aleda.webm"
@@ -31,24 +31,26 @@ export const Portfolio = (): React.JSX.Element => {
     return (
         <div className={styles.container}>
             <div>
-                <div className={styles.mobileAboutJobs}>
-                    <div className={styles.aboutJobsContainer}>
-                        <div className={styles.aboutJobsTitle}>
-                            Trabalhos <span>Selecionados</span>
-                        </div>
-                        <div className={styles.aboutText}>
-                            Lorem ipsum dolor sit amet
-                            Consectetuer adipiscing elit sed
-                            Diam nonummy nibh euismod
-                            Tincidunt ut laoreet dolore
-                            Magna aliquam erat volutpat ut
-                            Wisi enim ad minim veniam quis
-                            Nostrud exerci tation
-                            Ullamcorper suscipit lobortis nisl
-                            Ut aliquip ex ea commodo
+                {
+                    isSafari() ? <></> : <div className={styles.mobileAboutJobs}>
+                        <div className={styles.aboutJobsContainer}>
+                            <div className={styles.aboutJobsTitle}>
+                                Trabalhos <span>Selecionados</span>
+                            </div>
+                            <div className={styles.aboutText}>
+                                Lorem ipsum dolor sit amet
+                                Consectetuer adipiscing elit sed
+                                Diam nonummy nibh euismod
+                                Tincidunt ut laoreet dolore
+                                Magna aliquam erat volutpat ut
+                                Wisi enim ad minim veniam quis
+                                Nostrud exerci tation
+                                Ullamcorper suscipit lobortis nisl
+                                Ut aliquip ex ea commodo
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
                 <div className={styles.firstRow}>
                     <div className={styles.firstColumn}>
                         <div className={`${styles.aboutJobsContainer} ${styles.hiddenSafari}`}>
@@ -169,23 +171,25 @@ export const Portfolio = (): React.JSX.Element => {
                             </video>
                         </a>
                     </div>
-                    <a
-                        className={styles.mobileNinethJob}
-                        href="https://example.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <video
-                            ref={videoRef}
-                            muted
-                            playsInline
-                            loop
-                            className={styles.video}
-                            autoPlay
+                    {
+                        isSafari() ? <></> : <a
+                            className={styles.mobileNinethJob}
+                            href="https://example.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            <source src={videoSrc[1]} type={videoType} />
-                        </video>
-                    </a>
+                            <video
+                                ref={videoRef}
+                                muted
+                                playsInline
+                                loop
+                                className={styles.video}
+                                autoPlay
+                            >
+                                <source src={videoSrc[1]} type={videoType} />
+                            </video>
+                        </a>
+                    }
                 </div>
             </div>
         </div>
