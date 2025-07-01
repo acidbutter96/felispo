@@ -38,15 +38,13 @@ $bio-container-width: calc(100% - $text-container-width);
         width: $text-container-width;
         height: 100%;
 
-        @media screen and (max-width: 848px) {
-            width: 100%;
-        }
-
         padding: 0 5rem;
 
         text-align: left;
         color: variables.$blue-100;
         font-size: $text-size;
+        line-height: $line-height;
+        font-family: variables.$font-coolvetica-hv-comp;
 
         span {
             height: $line-height;
@@ -54,14 +52,18 @@ $bio-container-width: calc(100% - $text-container-width);
             white-space: nowrap;
         }
 
-        line-height: $line-height;
-
-        font-family: variables.$font-coolvetica-hv-comp;
-
         .specialFont {
             font-size: calc($text-size - 2rem);
             font-family: variables.$font-garamond-bold-italic;
             text-align: center;
+        }
+
+        @media screen and (max-width: 848px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 975px) {
+            width: 100%;            
         }
 
         @media screen and (max-width: 1270px) {
@@ -111,10 +113,6 @@ $bio-container-width: calc(100% - $text-container-width);
             .specialFont {
                 font-size: calc($text-size - 3rem);
             }
-        }
-
-        @media screen and (max-width: 975px) {
-            width: 100%;            
         }
     }
 
