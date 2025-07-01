@@ -197,5 +197,13 @@ $text-spacement: 3rem;
 }
 
 @media screen and (max-width: 435px) {
-    
+    .container {
+        footer {
+            height: calc(variables.$footer-height + 10rem);
+
+            .infoContainer {
+                padding-bottom: 3rem;
+            }
+        }
+    }
 }
