@@ -18,7 +18,9 @@ export const Footer = (): React.JSX.Element => {
                     </div>
                     <div className={styles.textContainer}>
                         <div>Vamos Criar</div>
-                        <div className={styles.styledText}>coisas legais</div>
+                        <div className={styles.styledText}>
+                            coisas legais
+                        </div>
                         <div>juntos!</div>
                     </div>
                     <div className={styles.emailContainer}>
