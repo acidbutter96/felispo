@@ -51,7 +51,7 @@ export const Portfolio = (): React.JSX.Element => {
                 </div>
                 <div className={styles.firstRow}>
                     <div className={styles.firstColumn}>
-                        <div className={styles.aboutJobsContainer}>
+                        <div className={`${styles.aboutJobsContainer} ${styles.hiddenSafari}`}>
                             <div className={styles.aboutJobsTitle}>
                                 Trabalhos <span>Selecionados</span>
                             </div>

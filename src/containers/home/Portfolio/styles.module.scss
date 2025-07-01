@@ -257,6 +257,10 @@ $secondColumn: calc(100% - 40%);
             background-color: variables.$pink-100;
 
         }
+
+        .hiddenSafari {
+            display: none;
+        }
     }
 }
 
