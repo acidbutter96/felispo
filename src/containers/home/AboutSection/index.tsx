@@ -1,25 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
 import styles from './styles.module.scss';
 import Image from 'next/image';
 
 
 export const AboutSection = (): React.JSX.Element => {
-    const parallaxRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (parallaxRef.current) {
-                const speed = 0.25;
-                const offset = window.scrollY * speed;
-                parallaxRef.current.style.transform = `translateY(${offset}px)`;
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     return (
         
         <div className={styles.aboutContainer}>
@@ -35,15 +19,13 @@ export const AboutSection = (): React.JSX.Element => {
                     consectetuer
                 </div>
                 <div className={styles.bioContainer}>
-                    <div ref={parallaxRef} className={styles.parallaxWrapper}>
-                        <Image
-                            alt='felispo'
-                            src='/static/images/biopic.png'
-                            width={1000}
-                            height={1000}
-                            className={styles.bio}
-                            />
-                    </div>
+                    <Image
+                        alt='felispo'
+                        src='/static/images/biopic.png'
+                        width={700}
+                        height={700}
+                        className={styles.bio}
+                    />
                 </div>
             </div>
         </div>
