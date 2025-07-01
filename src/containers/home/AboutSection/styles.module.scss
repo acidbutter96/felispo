@@ -12,7 +12,6 @@ $bio-container-width: calc(100% - $text-container-width);
     min-height: variables.$aboutSectionHeight;
 
     @media screen and (max-width: 1346px) {
-        height: 100%;
     }
 }
 
