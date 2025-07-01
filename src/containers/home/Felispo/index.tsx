@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import styles from "./styles.module.scss";
 import { isSafari } from "@/utils/isSafari";
 
