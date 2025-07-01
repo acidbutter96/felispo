@@ -43,14 +43,16 @@ $bio-container-width: calc(100% - $text-container-width);
         text-align: left;
         color: variables.$blue-100;
         font-size: $text-size;
-        font-family: variables.$font-coolvetica-hv-comp;
-        line-height: $line-height;
 
         span {
             height: $line-height;
             display: inline;
             white-space: nowrap;
         }
+
+        line-height: $line-height;
+
+        font-family: variables.$font-coolvetica-hv-comp;
 
         .specialFont {
             font-size: calc($text-size - 2rem);
@@ -124,6 +126,9 @@ $bio-container-width: calc(100% - $text-container-width);
         .bio {
             width: 100%;
             min-height: variables.$aboutSectionHeight;
+
+            transition: transform 0.2s linear;
+            will-change: transform;
         }
 
         @media screen and (max-width: 1270px) {
@@ -137,4 +142,9 @@ $bio-container-width: calc(100% - $text-container-width);
             width: 100%;            
         }
     }
+}
+
+.parallaxWrapper {
+    will-change: transform;
+    transition: transform 0.2s linear;
 }
