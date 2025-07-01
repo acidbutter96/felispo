@@ -6,6 +6,8 @@ import { motion } from "motion/react";
 
 
 export const AboutSection = (): React.JSX.Element => {
+    
+
     return (
         <div className={styles.aboutContainer}>
             <div className={styles.about}>
