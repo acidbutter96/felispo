@@ -10,9 +10,6 @@ $bio-container-width: calc(100% - $text-container-width);
     display: flex;
 
     min-height: variables.$aboutSectionHeight;
-
-    @media screen and (max-width: 1346px) {
-    }
 }
 
 .about {
@@ -96,9 +93,14 @@ $bio-container-width: calc(100% - $text-container-width);
             $text-container-width: 50%;
             $bio-container-width: calc(100% - $text-container-width);
 
+            width: $text-container-width;
 
             .specialFont {
                 font-size: calc($text-size - 2rem);
+            }
+
+            .bioContainer {
+                width: $bio-container-width;
             }
         }
 
@@ -121,7 +123,7 @@ $bio-container-width: calc(100% - $text-container-width);
 
         .bio {
             width: 100%;
-            // min-height: variables.$aboutSectionHeight;
+            min-height: variables.$aboutSectionHeight;
 
             transition: transform 0.2s linear;
             will-change: transform;
@@ -135,7 +137,12 @@ $bio-container-width: calc(100% - $text-container-width);
         }
 
         @media screen and (max-width: 975px) {
-            width: 100%;
+            width: 100%;            
         }
     }
+}
+
+.parallaxWrapper {
+    will-change: transform;
+    transition: transform 0.2s linear;
 }
