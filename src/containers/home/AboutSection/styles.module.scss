@@ -100,7 +100,7 @@ $bio-container-width: calc(100% - $text-container-width);
             }
         }
 
-        @media screen and (max-width: 1164px) {
+        @media screen and (max-width: 1193px) {
             $text-size : calc($text-size - 0.2rem);
             $line-height: calc($line-height - 0.5rem);
 
