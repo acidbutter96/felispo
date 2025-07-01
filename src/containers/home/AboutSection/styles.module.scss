@@ -19,7 +19,7 @@ $bio-container-width: calc(100% - $text-container-width);
     width: 100%;
     height: 100%;
 
-    @media screen and (max-width: 848px) {
+    @media screen and (max-width: 975px) {
         width: 100%;
 
         display: flex;
@@ -58,7 +58,7 @@ $bio-container-width: calc(100% - $text-container-width);
             text-align: center;
         }
 
-        @media (max-width: 1270px) {
+        @media screen and (max-width: 1270px) {
             $text-size : calc($text-size - 1rem);
             $line-height: calc($line-height - 0.5rem);
 
@@ -79,19 +79,40 @@ $bio-container-width: calc(100% - $text-container-width);
             }
         }
 
-        @media (max-width: 1157px) {
-            $text-size : calc($text-size - .5rem);
+        @media screen and (max-width: 1346px) {
+            $text-size : calc($text-size - 1.5rem);
+            $line-height: calc($line-height - 0.5rem);
+
+            font-size: $text-size;
+            line-height: $line-height;
+
+            $text-container-width: 50%;
+            $bio-container-width: calc(100% - $text-container-width);
+
+            width: $text-container-width;
+
+            .specialFont {
+                font-size: calc($text-size - 2rem);
+            }
+
+            .bioContainer {
+                width: $bio-container-width;
+            }
+        }
+
+        @media screen and (max-width: 1164px) {
+            $text-size : calc($text-size - 0.2rem);
             $line-height: calc($line-height - 0.5rem);
 
             font-size: $text-size - 3rem;
             line-height: $line-height;
 
             .specialFont {
-                font-size: calc($text-size - 2rem);
+                font-size: calc($text-size - 3rem);
             }
         }
 
-        @media screen and (max-width: 848px) {
+        @media screen and (max-width: 975px) {
             width: 100%;            
         }
     }
@@ -112,7 +133,7 @@ $bio-container-width: calc(100% - $text-container-width);
             width: $bio-container-width;
         }
 
-        @media screen and (max-width: 848px) {
+        @media screen and (max-width: 975px) {
             width: 100%;            
         }
     }

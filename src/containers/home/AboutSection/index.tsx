@@ -9,14 +9,14 @@ export const AboutSection = (): React.JSX.Element => {
         <div className={styles.aboutContainer}>
             <div className={styles.about}>
                 <div className={styles.textContainer}>
-                Lorem ipsum
-                dolor sit amet,
-                consectetuer
-                adipiscing elit,
-                sed diam <span className={styles.specialFont}>nonummy</span> nibh
-                Lorem ipsum
-                dolor sit amet,
-                consectetuer
+                    Lorem ipsum
+                    dolor sit amet,
+                    consectetuer
+                    adipiscing elit,
+                    sed diam <span className={styles.specialFont}>nonummy</span> nibh
+                    Lorem ipsum
+                    dolor sit amet,
+                    consectetuer
                 </div>
                 <div className={styles.bioContainer}>
                     <Image
