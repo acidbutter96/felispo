@@ -1,9 +1,33 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import { isSafari } from "@/utils/isSafari";
 
 export const Portfolio = (): React.JSX.Element => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+    
+    const [videoSrc, setVideoSrc] = useState<string[]>([
+        "/static/videos/projects/google.webm",
+        "/static/videos/projects/aleda.webm"
+    ]);
+    const [videoType, setVideoType] = useState("video/webm");
+
+    useEffect(() => {
+        if (isSafari()) {
+            setVideoSrc([
+                "/static/videos/projects/google.mp4",
+                "/static/videos/projects/aleda.mp4"
+            ]);
+            setVideoType("video/mp4");
+        } else {
+            setVideoType("video/webm");
+        }
+
+        if (videoRef.current) {
+            videoRef.current.load();
+        }
+    }, []);
     return (
         <div className={styles.container}>
             <div>
@@ -49,7 +73,7 @@ export const Portfolio = (): React.JSX.Element => {
                             rel="noopener noreferrer"
                             className={styles.firstJob}
                         >
-                            <Image alt="" src={"/static/images/projects/three-body-problem.jpg"} width={500} height={500} />
+                            <Image alt="" src={"/static/images/projects/three-body-problem.jpg"} width={1000} height={1000} />
                         </a>
                     </div>
                     <a
@@ -59,7 +83,7 @@ export const Portfolio = (): React.JSX.Element => {
                         className={styles.frstRowsecondColumn}
                     >
                         <div className={styles.secondJob}>
-                            <Image alt="" src={"/static/images/projects/autoral-1.png"} width={500} height={500} />
+                            <Image alt="" src={"/static/images/projects/autoral-1.png"} width={1000} height={1000} />
                         </div>
                     </a>
                 </div>
@@ -81,13 +105,13 @@ export const Portfolio = (): React.JSX.Element => {
                         </video>
                     </a>
                     <div className={styles.thirdJob}>
-                        <Image alt="" src={"/static/images/projects/03 ❤️.png"} width={500} height={500}/>
+                        <Image alt="" src={"/static/images/projects/03 ❤️.png"} width={1000} height={1000}/>
                     </div>
                     <div className={styles.fourthJob}>
-                        <Image alt="" src={"/static/images/projects/04 ❤️.png"} width={500} height={500}/>
+                        <Image alt="" src={"/static/images/projects/04 ❤️.png"} width={1000} height={1000}/>
                     </div>
                     <div className={styles.fifthJob}>
-                        <Image alt="" src={"/static/images/projects/05 ❤️.png"} width={500} height={500}/>
+                        <Image alt="" src={"/static/images/projects/05 ❤️.png"} width={1000} height={1000}/>
                     </div>
                 </div> */}
                 <div className={styles.thirdRow}>
@@ -99,13 +123,14 @@ export const Portfolio = (): React.JSX.Element => {
                             rel="noopener noreferrer"
                         >
                             <video
+                                ref={videoRef}
                                 muted
                                 playsInline
                                 loop
                                 className={styles.video}
                                 autoPlay
                             >
-                                <source src={"/static/videos/projects/google.webm"} type={"video/webm"} />
+                                <source src={videoSrc[0]} type={videoType} />
                             </video>
                         </a>
                         <a
@@ -114,7 +139,7 @@ export const Portfolio = (): React.JSX.Element => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image alt="" src={"/static/images/projects/svrvrv.png"} width={500} height={500} />
+                            <Image alt="" src={"/static/images/projects/svrvrv.png"} width={1000} height={1000} />
                         </a>
                     </div>
                     <div className={styles.secondColumn}>
@@ -124,7 +149,7 @@ export const Portfolio = (): React.JSX.Element => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Image alt="" src={"/static/images/projects/ynot.png"} width={500} height={500} />
+                            <Image alt="" src={"/static/images/projects/ynot.png"} width={1000} height={1000} />
                         </a>
                         <a
                             className={styles.ninethJob}
@@ -133,13 +158,14 @@ export const Portfolio = (): React.JSX.Element => {
                             rel="noopener noreferrer"
                         >
                             <video
+                                ref={videoRef}
                                 muted
                                 playsInline
                                 loop
                                 className={styles.video}
                                 autoPlay
                             >
-                                <source src={"/static/videos/projects/aleda.webm"} type={"video/webm"} />
+                                <source src={videoSrc[1]} type={videoType} />
                             </video>
                         </a>
                     </div>
@@ -150,13 +176,14 @@ export const Portfolio = (): React.JSX.Element => {
                         rel="noopener noreferrer"
                     >
                         <video
+                            ref={videoRef}
                             muted
                             playsInline
                             loop
                             className={styles.video}
                             autoPlay
                         >
-                            <source src={"/static/videos/projects/aleda.webm"} type={"video/webm"} />
+                            <source src={videoSrc[1]} type={videoType} />
                         </video>
                     </a>
                 </div>
